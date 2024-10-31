@@ -6,7 +6,8 @@ description: "Heute wird am Hof ab und umgebaut."
 isStarred: false
 tags: ["Hof", "Tiere"]
 ---
-# Aufklaren
+# Geplant
+Geplant sind heute folgende Punkte
 
 ## Koppel
 Wir haben eine Koppel mit ca 1ha gepachtet. Der Pachtvertrag läuft zum Ende des Jahres aus.
@@ -27,3 +28,25 @@ Beachtung findet.
 
 ## Haushalt
 Der wird auch heute wieder zu kurz kommen :grinning:
+
+# Umgesetzt
+In der Realität sah der Tag etwas anders aus als geplant.
+
+## Koppel
+Wir waren gar nicht auf der Koppel.
+
+## Stall
+Die Pferde hatten gestern noch den Zaun am Stall kaputt gemacht. Das haben wir heute nach dem Frühstück
+erstmal behoben, damit die Pferde wieder raus konnten.
+
+Am Nachmittag haben wir dann den Stall ausgemistet und Futter vorbereitet. 
+Anschließend kamen die Pferde zeitig in die Boxen heute
+
+## Haushalt
+Entgegen der Erwartung, haben wir zumindest die Küche heute gemacht.
+
+## Blog
+Mein Blog hat heute ein neues Layout bekommen.
+Ich werde die nächsten Tage mal schauen, ob mir das wirklich gefällt.
+
+So wirklich habe ich keine Lust, mich mit dem Layout in Hugo auseinander zu setzen.
