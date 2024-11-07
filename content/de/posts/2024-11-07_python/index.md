@@ -6,6 +6,7 @@ description: "Mein neues Buch"
 isStarred: false
 tags: ["Programmieren", "Python", "Buch"]
 ---
+Dieser Artikel wird noch weiter wachsen, sobald ich mich mit dem Buch weiter beschäftige.
 
 # 36 Python Projekte für die Praxis
 
