@@ -1,6 +1,6 @@
 ---
 title: "Buch"
-date: "2024-11-08T02:26:04+02:00"
+date: "2024-11-08T08:00:04+02:00"
 draft: false
 description: "Ich hab ein bisschen mit ChatGPT gespielt"
 isStarred: false
