@@ -50,8 +50,18 @@ Im zweiten Kapitel geht es um die Basics in Python:
 Beim querlesen macht das schon einen guten Eindruck. Man bekommt einen guten Überblick über die Basics.
 
 ## drittes Kapitel
-Im dritten Kapitel geht es dann ins Eingemachte. Es werden mit 'Tkinter' die ersten Anwendungen erstellt.
-Sobald ich da etwas quergelesen habe, bzw das erste Projekt bearbeitet habe, werde ich dazu mehr schreiben.
+Im dritten Kapitel erstellt man die ersten GUI (Graphical User Interface).
+Man lernt erstmal die Grundlagen kennen. Welche Elemente gibt es?
+- Label
+- Button
+- Eingabefelder
+- Checkboxen / Radiobutton
+- etc.
+
+Dazu gibt es dann kleine Übungen, in denen man die Größe des Fensters manipuliert.
+Mit dem ersten Button dann ein Label manipuliert (Text, Hintergrundfarbe, Schriftart, etc.)
+
+Zu jedem Element, das erklärt wird, kommt auch eine kleine Übung mit zusätzlichen Aufgaben zum selber ausprobieren und rumspielen.
 
 ## viertes Kapitel
 

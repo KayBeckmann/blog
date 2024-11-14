@@ -21,3 +21,5 @@ Man lernt erstmal die Grundlagen kennen. Welche Elemente gibt es?
 
 Dazu gibt es dann kleine Übungen, in denen man die Größe des Fensters manipuliert.
 Mit dem ersten Button dann ein Label manipuliert (Text, Hintergrundfarbe, Schriftart, etc.)
+
+Zu jedem Element, das erklärt wird, kommt auch eine kleine Übung mit zusätzlichen Aufgaben zum selber ausprobieren und rumspielen.
