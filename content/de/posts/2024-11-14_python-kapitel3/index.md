@@ -1,7 +1,7 @@
 ---
 title: "Python Buch : Kapitel 3"
 date: "2024-11-14T08:00:04+02:00"
-draft: true
+draft: false
 #description: ""
 isStarred: false
 tags: ["Programmieren", "Python"]
