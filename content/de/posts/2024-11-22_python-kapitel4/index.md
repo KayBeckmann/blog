@@ -1,5 +1,5 @@
 ---
-title: "Python Buch : Kapitel 4"
+title: "Python Buch : Kapitel 4 - Übung 1"
 date: "2024-11-22T08:00:04+02:00"
 draft: false
 #description: ""
