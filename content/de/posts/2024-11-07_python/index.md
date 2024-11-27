@@ -130,10 +130,76 @@ Anschließend werden die Küstenlinien der Kontinente gezeichnet.
 
 In der Mitte wird dann noch ein rotes "X" als Makierung gesetzt.
 
-### Übung 1: Erweiterung
+### Übung 1: Erweiterung (27.11.2024)
 Als nächstes soll dann ein zeitlicher Verlauf geplottet werden.
 Dafür soll der Benutzer eine Zeit eingeben, über die die aktuelle Position erfasst werden soll.
 Im Anschluß wird dann eine Linie auf der Karte gezeichnet, statt eines einzelnen Punktes.
+
+#### Code
+Zusätzlich wird nun noch das Modul _time_ importiert.
+```python
+import requests
+import matplotlib.pyplot as plt
+from mpl_toolkits.basemap import Basemap
+import time
+```
+Der Abruf der aktuellen Position beibt unverändert.
+```python
+def iss_location():
+    response = requests.get("http://api.open-notify.org/iss-now.json")
+    if response.status_code == 200:
+        data = response.json()
+        iss_position = data["iss_position"]
+        return iss_position
+    return None
+```
+Das Zeichnen der Karte wurde dafür umgeschrieben.
+Im ersten Schritt wird der Funktion nun die Zeit übergeben, die der 
+Benutzer eingegeben hat und ein Array an Positionen der ISS über den
+Zeitlichenverlauf.
+
+Die Positionen werden in der Schleife aus dem Array ausgelesen und an das
+Modul zum Zeichnen der Karte übergeben. Am Ende der Schleife wird noch
+die Überschrift der Karte angepasst und die Karte wird angezeigt.
+```python
+def iss_map(minutes, positions):
+    geo_map = Basemap(projection="ortho",lat_0=0,lon_0=0)
+    geo_map.drawcoastlines()
+
+    for position in positions:
+        lon = float(position["longitude"])
+        lat = float(position["latitude"])
+
+        x, y = geo_map(lon, lat)
+        geo_map.plot(x, y, "ro", markersize=5)
+    
+    plt.title(f"Verlauf der ISS-Position über {minutes} Minuten")
+    plt.show()
+```
+Im Hauptteil wird die aktuelle Systemzeit gespeichert und ein leeres
+Array für den Verlauf der Position erstellt.
+Anschließend wird der benutzer gefragt, über wie viele Minuten der 
+Standort der ISS erfasst werden soll.
+Sobald die Eingabe erfolgt ist, startet die Schleife und ruft die Funktion
+_iss\_location_ auf. Der Wert, der zurück gegeben wird, wird im Array 
+gespeichert. Nach ablauf der Zeit, wird die Eingabe des Benutzers und das
+Array an die Funktion _iss\_map_ übergeben.
+```python
+if __name__ == "__main__":
+    starttime = time.time()
+    positions = []
+    minutes = int(input("Wie viele Minuten soll die ISS getrackt werden? "))
+
+    while time.time() - starttime < minutes * 60:
+        position = iss_location()
+
+        if position:
+            positions.append(position)
+        
+        time.sleep(10)
+
+    iss_map(minutes, positions)
+```
 
 ## fünftes Kapitel
 
