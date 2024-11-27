@@ -1,6 +1,6 @@
 ---
 title: "ASUS Chromebook Plus CX34"
-date: "2024-11-07T12:26:04+02:00"
+date: "2024-11-27T12:26:04+02:00"
 draft: true
 description: "ASUS Chromebook Plus CX34"
 isStarred: false
