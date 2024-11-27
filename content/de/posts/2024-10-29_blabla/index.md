@@ -1,7 +1,7 @@
 ---
 title: 'Allgemeines bla bla'
 date: '2024-10-29T12:26:04+02:00'
-draft: false
+draft: true
 description: "Kein besonderes Thema, nur ein bisschen bla bla."
 isStarred: false
 ---

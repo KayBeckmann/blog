@@ -39,7 +39,7 @@ Sobald ich dafür Zeit habe, werde ich das noch in angriff nehmen und den Artike
 
 ## Aktuell
 Ich schreibe einen Artikell am Laptop oder am Chromebook. Per Skript lege ich ein neuen Commit in meinem Git-Repository an und pushe das ganze zu Github.
-Am Server läuft einmal am Tag ein Crone-Job, der das Repo pulled und dann den entsprechenden Docker Container rebootet.
+Am Server läuft einmal am Tag ein Cron-Job, der das Repo pulled und dann den entsprechenden Docker Container rebootet.
 Das ist schon quasi automatisiert.
 Bevor ein Artikel aber auf der Seite erscheint, muss das Programm "Hugo" die Seite aber erst noch Compelieren und das passiert noch auf meinem Laptop manuell.
 
@@ -54,7 +54,7 @@ Diese teste ich nun mit diesem Nachtrag.
 
 Das Ganze sieht nun so aus, dass ich einen Beitrag an einem meiner Rechner oder online bei Github schreiben kann. Sofern ich den Beitrag auf den PC's schreibe, kann ich diesen mit meinem Upload-Script zu Github pushen.
 Die Beiträge werden dann vom Server von Github runter geladen.
-Dann wird ein Container mit Archlinux gestartet, dieser "compeliert" das Projekt und ein zweiter Docker-Container veröffentlicht dann die statischen Inhalte..
+Dann wird ein Container mit Archlinux gestartet, dieser "compeliert" das Projekt und ein zweiter Docker-Container veröffentlicht dann die statischen Inhalte.
 Die entsprechenden Dateien werde ich noch nachreichen, sofern der Testlauf erfolgreich ist.
 
 Es hat natürlich nicht auf anhieb funktioniert. Nach ein bisschen hin und her, habe ich festgestellt, dass auf dem Server das Repository mit dem Theme nicht geladen wurde.
