@@ -8,7 +8,7 @@ tags: ["Programmieren", "Python"]
 ---
 # 36 Python Projekte für die Praxis
 Der [Hauptartikel](https://beckmann-md.de/posts/2024-11-07_python/#viertes-kapitel) wird von mir noch weiter ausgeführt.
-Ich den einzelnen Beiträgen, schreibe ich nur kurz zusammen, was ich so gemacht habe.
+In den einzel Artikeln kann man die einzelnen Übungen übersichtlicher Nachlesen.
 
 ## Kapitel 4
 Eingeleitet wird das vierte Kapitel mit Grundlagen zu HTML, API's und JSON.
