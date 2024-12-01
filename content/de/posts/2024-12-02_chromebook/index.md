@@ -24,15 +24,15 @@ Da hierfür der Support der Linux Programme einfach besser ist, als bei ARM-CPU.
 Ich nutze schon seit 2009 Linux auf allen meinen PC und Laptops, deshalb ist mir
 die Unterstützung der Linux Software auch so wichtig.
 
-| **Typ**         | Asus CM1400FX | ASUS CX34 |
+| **Typ**         | Asus CM1400FX flip | ASUS CX34 |
 | --------------- | ------------- | --------- |
-| CPU             |               |           |
-| Arbeitsspeicher |               |           |
-| Festplatte      |               |           |
+| CPU             | AMD Athlon3015Ce|           |
+| Arbeitsspeicher | 4 GB          |           |
+| Festplatte      | 64 GB SSD     |           |
 | ---             | ---           | ---       |
-| Display         |               |           |
+| Display         | Full-HD Touchscreen Display |           |
 | Pixel           |               |           |
-| Diagonale       |               |           |
+| Diagonale       | 14 Zoll       |           |
 | ---             | ---           | ---       |
 | Anschlüße       |               |           |
 | Speicherkarte   |               |           |
