@@ -28,12 +28,12 @@ Da gibt es nun unterschiedliche Ansätze:
 Also für nächstes Jahr sehe ich dann zwei große _Brecher_ für mich:
 
 1. Auswanderung nach Schweden
-1. Ich will immernoch Programmierer werden
+1. Ich will immer noch Programmierer werden
 
 ## Auswandern nach Schweden
 
 Die erste Aufgabe kann ich zum jetzigen Zeitpunkt nicht sinnvoll
-in kleine Aufgaben zerlegne. Bevor es da überhaupt irgendetwas zu
+in kleine Aufgaben zerlegen. Bevor es da überhaupt irgend etwas zu
 planen gibt, müssen wir erstmal sehen, wie es mit dem Haus
 weiter geht. Der Verkauf zieht sich. Wahrscheinlich auch, weil
 gerade Weihnachtszeit ist und alles irgendwie im _Schlafmodus_ ist.
@@ -84,7 +84,7 @@ Bei der Übersetzung hilft mir aber noch ChatGPT.
 #### Join
 
 Join habe ich in der Zeit bei der _DA_ schon geschrieben.
-Damals war es ein Gruppenprüjekt und wurde mit HTML, CSS und
+Damals war es ein Gruppenprojekt und wurde mit HTML, CSS und
 JavaScript geschrieben, ohne irgendein Framework.
 
 Die neue Version soll in VUE geschrieben werden.
