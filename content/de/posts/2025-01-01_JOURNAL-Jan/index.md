@@ -9,7 +9,7 @@ layout: "monthly_overview"
 
 # Monatsübersicht: Januar 2025
 
-Nach dem ich in meinen (Vorsätzen)[https://blog.kay-beckmann.de/posts/2024-12-30_vorsaetze/]
+Nach dem ich in meinen [Vorsätzen](https://blog.kay-beckmann.de/posts/2024-12-30_vorsaetze/)
 die Entscheidung gefällt hatte die gesetzten Ziele zu verfolgen,
 habe ich mir von ChatGPT mal eine Vorlage zum Jurnaling entwerfen lassen.
 
