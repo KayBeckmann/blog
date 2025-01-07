@@ -25,7 +25,7 @@ Das wird sehr wahrscheinlich nicht die letzte Version bleiben.
 | Hoch      | Kundenprojekt | In Bearbeitung | KW 5     |
 | Mittel    | Portfolio     | In Bearbeitung | KW 9     |
 | Niedrig   | Join          | Offen          | KW 13    |
-| Hoch      | Ansible       | Offen          | KW 2     |
+| Hoch      | Ansible       | Erledigt       | KW 2     |
 
 ## Statusübersicht
 
@@ -46,11 +46,7 @@ Im Frontend ist noch gar nichts angefangen.
 
 ### Ansible
 
-Bis jetzt steht nur eine grobe Idee.
-
-- Ein Repository für die Playbooks
-- Ein Playbook für den Blog
-- Playbook für Kundenprojekt updates
-
-Was Ansible ist und wie es funktioniert, werde ich in einem separaten Beitrag
-genauer erklären.
+Wie ihr dem
+[Blogbeitrag](https://blog.kay-beckmann.de/posts/2025-01-05_ansible/)
+entnehmen könnt. Habe ich die Aufgabe innerhalb der selbsterlegten
+Frist erledigt.
