@@ -1,6 +1,6 @@
 ---
 title: "Monatsübersicht"
-date: "2025-01-01T00:00:00Z"
+date: "2025-01-13T00:00:00Z"
 draft: false
 description: "Vorlage für Journals."
 isStarred: false
@@ -13,10 +13,10 @@ layout: "monthly_overview"
 
 | Priorität | Aufgaben      | Status         | Deadline | Verzögerungsstatus |
 | --------- | ------------- | -------------- | -------- | ------------------ |
-| Hoch      | Kundenprojekt | In Bearbeitung | KW 5     | Gefährdet |
-| Mittel    | Portfolio     | In Bearbeitung | KW 9     | im Zeitplan |
-| Niedrig   | Join          | Offen          | KW 13    | wartend |
-| Hoch      | Ansible       | Abgeschlossen  | KW 2     | im Zeitplan |
+| Hoch      | Kundenprojekt | In Bearbeitung | KW 5     | Gefährdet          |
+| Mittel    | Portfolio     | In Bearbeitung | KW 9     | im Zeitplan        |
+| Niedrig   | Join          | Offen          | KW 13    | wartend            |
+| Hoch      | Ansible       | Abgeschlossen  | KW 2     | im Zeitplan        |
 
 ## Statusübersicht
 
@@ -33,7 +33,7 @@ Ich habe den Kunden nun schon mehrfach darauf angesprochen.
 1. Die ersten Komponenten sind schon fertig
 1. Übersetzung funktioniert technisch
 
-**Update:** Es geht voran. Die ersten Sektionen können als fertig 
+**Update:** Es geht voran. Die ersten Sektionen können als fertig
 angesehen werden.
 
 ### Join
@@ -54,6 +54,6 @@ Bis jetzt steht nur eine grobe Idee.
 Was Ansible ist und wie es funktioniert, werde ich in einem separaten Beitrag
 genauer erklären.
 
-**Update:** Das Playbook ist fertig und funktioniert, wie dem 
+**Update:** Das Playbook ist fertig und funktioniert, wie dem
 [Beitrag](https://blog.kay-beckmann.de/posts/2025-01-05_ansible/)
 entnommen werden kann.
