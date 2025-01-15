@@ -1,5 +1,5 @@
 ---
-title: "Monatsübersicht"
+title: "Februar"
 date: "2025-02-01T00:00:00Z"
 draft: true
 description: "Vorlage für Journals."
