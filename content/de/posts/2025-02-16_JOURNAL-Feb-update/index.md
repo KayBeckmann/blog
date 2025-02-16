@@ -1,5 +1,5 @@
 ---
-title: "Februar"
+title: "Februar: Update"
 date: "2025-02-16T00:00:00Z"
 draft: false
 description: "Vorlage für Journals."
@@ -115,6 +115,7 @@ Das ist ein Projekt in dem man sehr umfangreich seinem "Spieltrieb" nachgehen ka
 Es gibt so viele potentielle Funktionen, die man dort einbauen kann.
 
 Bis jetzt habe ich folgende Idee zur Aufteilung:
+
 - Frontend
 - Backend
 - SQL Datenbank
