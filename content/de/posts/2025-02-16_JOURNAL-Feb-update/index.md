@@ -15,12 +15,12 @@ Zeit das Journal zu aktualisieren und den Vortschritt zu erfassen.
 
 | Priorität | Aufgaben             | Status         | Deadline | Verzögerungsstatus |
 | --------- | -------------------- | -------------- | -------- | ------------------ |
-| Hoch      | Kundenprojekt        | In Bearbeitung | KW 5     | verzögert          |
-| Mittel    | Portfolio            | In Bearbeitung | KW 9     | im Zeitplan        |
-| Niedrig   | Join                 | In Bearbeitung | KW 13    | im Zeitplan        |
-| Mittel    | Jennys Farm          | In Bearbeitung | KW 9     | im Zeitplan        |
-| Niedrig   | Beckmann Mediadesign | In Bearbeitung | KW 13    | wartend            |
-| Niedrig   | ERP                  | wartend        | offen    | wartend            |
+| Hoch      | [Kundenprojekt](#kundenprojekt)        | In Bearbeitung | KW 5     | verzögert          |
+| Mittel    | [Portfolio](#portfolio)            | In Bearbeitung | KW 9     | im Zeitplan        |
+| Niedrig   | [Join](#join)                 | In Bearbeitung | KW 13    | im Zeitplan        |
+| Mittel    | [Jennys Farm](#jennys-farm)          | In Bearbeitung | KW 9     | im Zeitplan        |
+| Niedrig   | [Beckmann Mediadesign](#beckmann-mediadesign) | In Bearbeitung | KW 13    | wartend            |
+| Niedrig   | [ERP](#erp)                  | wartend        | offen    | wartend            |
 
 ## Statusübersicht
 
