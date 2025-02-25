@@ -1,7 +1,7 @@
 ---
 title: "März"
 date: "2025-03-01T00:00:00Z"
-draft: true
+draft: false
 description: "Vorlage für Journals."
 isStarred: false
 layout: "monthly_overview"
@@ -9,14 +9,18 @@ layout: "monthly_overview"
 
 # Monatsübersicht: März 2025
 
-Der erste Monat ist geschafft.
-Zeit das Journal zu aktualisieren und den Vortschritt zu erfassen.
+Übersicht der letzten beiden Monate.
+Das erste Quartal 2025 neigt sich dem Ende entgegen und ich habe weniger geschafft
+als ich gehofft hatte.
+
+Ein Projekt habe ich mehr Aufmerksamkeit geschenkt als gut war und dann habe ich
+meine Zeit auch lieber mit der Familie verbracht, statt alleine in meiner 
+Kammer zu programmieren.
 
 ## Aufgabenübersicht
 
 | Priorität | Aufgaben                                      | Status         | Deadline | Verzögerungsstatus |
 | --------- | --------------------------------------------- | -------------- | -------- | ------------------ |
-| Hoch      | [Kundenprojekt](#kundenprojekt)               | Archiviert     | KW 5     | verzögert          |
 | Mittel    | [Portfolio](#portfolio)                       | In Bearbeitung | KW 9     | im Zeitplan        |
 | Niedrig   | [Join](#join)                                 | In Bearbeitung | KW 13    | im Zeitplan        |
 | Mittel    | [Jennys Farm](#jennys-farm)                   | fertig         | KW 9     | im Zeitplan        |
@@ -24,18 +28,6 @@ Zeit das Journal zu aktualisieren und den Vortschritt zu erfassen.
 | Niedrig   | [ERP](#erp)                                   | wartend        | offen    | wartend            |
 
 ## Statusübersicht
-
-### Kundenprojekt
-
-Ich warte noch auf Unterlagen des Kunden. Sobald diese verfügbar sind, kann der letzte
-Feinschliff erfolgen.
-
-**Januar Update:** Die Unterlagen vom Kunden fehlen immer noch.
-Ich habe den Kunden nun schon mehrfach darauf angesprochen.
-
-**Februar Update:** Vermutlich wird das Projekt nicht mehr umgesetzt
-**Februar Update:** Der Kunde gibt mir die Daten nicht. Ich werde das Projekt zurückstellen.
-Sollte der Kunde noch Interesse an dem Projekt haben, kann ich das Projekt reaktivieren.
 
 ### Portfolio
 
@@ -52,6 +44,14 @@ ist noch die alte Seite online. Die neue Version wird unter der gleichen
 Domain veröffentlicht.
 
 **Februar Update:** Noch unverändert.
+
+**März Update:** 
+
+Die Seite ist online.
+Die Projekte müssen noch überarbeitet werden.
+
+Ich bin noch am Überlegen, ob ich ein Kontaktformular implementiere.
+Kontakt per E-Mail wird aber wahrscheinlich reichen.
 
 ### Join
 
@@ -76,6 +76,14 @@ Zu meiner Schande muss ich gestehen, dass ich in den letzten Wochen wenig Zeit h
 Das bisschen Zeit, das ich hatte, habe ich am ERP-Projekt investiert.
 Meine Priorität sollte ich wieder auf Join wenden, damit ich das fertig bekomme.
 
+**März Update:**
+Ich habe das Projekt weiter bearbeitet.
+Während der Bearbeitung fällt mir aber immer wieder etwas ein, dass ich anders
+gestalten will.
+
+Ich muss noch meine Planung im Vorfeld verbessern.
+Außerdem muss ich meine Projektübersicht und Abarbeitung verbessern.
+
 ### Jennys Farm
 
 Ich habe eine kleine
@@ -96,6 +104,11 @@ Der Blog ist noch nicht online. Von meiner Seite ist alles vorbereitet.
 Ich muss den Blog nur noch freischalten. Dafür muss meine Frau aber Zeit und Lust
 haben den Blog in Betrieb zu nehmen.
 
+**März Update:**
+Der Blog ist immer noch nicht online.
+Die Seite selber sehe ich aber als *abgeschlossen* an.
+Somit nehme ich dieses Projekt auch aus der Übersicht raus.
+
 ### Beckmann Mediadesign
 
 Wie ich in den
@@ -108,6 +121,11 @@ eine eigene Homepage haben. Diese soll auf
 
 **Februar Update:**
 Eine Basis Seite habe ich schon mal erstellt. Die Seite geht demnächst online.
+
+**März Update:**
+Das Impressum und der Datenschutz müssen noch erstellt werden.
+Die Seite kann dann in der ersten Version online gehen.
+Eventuell erhalte ich dann auch die ersten Aufträge für mein Kleingewerbe.
 
 ### ERP
 
@@ -133,3 +151,6 @@ Im Backend kann der Admin sich anmelden und neue Benutzer anlegen.
 
 Die Datenbank wird schrittweise mit dem ERP erweitert. Die Tabellen werde
 von den Klassen im Backend erstellt und verwaltet.
+
+**März Update:**
+Das Projekt ist noch im Status *wartend*.
