@@ -14,7 +14,7 @@ Das erste Quartal 2025 neigt sich dem Ende entgegen und ich habe weniger geschaf
 als ich gehofft hatte.
 
 Ein Projekt habe ich mehr Aufmerksamkeit geschenkt als gut war und dann habe ich
-meine Zeit auch lieber mit der Familie verbracht, statt alleine in meiner 
+meine Zeit auch lieber mit der Familie verbracht, statt alleine in meiner
 Kammer zu programmieren.
 
 ## Aufgabenübersicht
@@ -45,7 +45,7 @@ Domain veröffentlicht.
 
 **Februar Update:** Noch unverändert.
 
-**März Update:** 
+**März Update:**
 
 Die Seite ist online.
 Die Projekte müssen noch überarbeitet werden.
@@ -106,7 +106,7 @@ haben den Blog in Betrieb zu nehmen.
 
 **März Update:**
 Der Blog ist immer noch nicht online.
-Die Seite selber sehe ich aber als *abgeschlossen* an.
+Die Seite selber sehe ich aber als _abgeschlossen_ an.
 Somit nehme ich dieses Projekt auch aus der Übersicht raus.
 
 ### Beckmann Mediadesign
@@ -153,4 +153,4 @@ Die Datenbank wird schrittweise mit dem ERP erweitert. Die Tabellen werde
 von den Klassen im Backend erstellt und verwaltet.
 
 **März Update:**
-Das Projekt ist noch im Status *wartend*.
+Das Projekt ist noch im Status _wartend_.
