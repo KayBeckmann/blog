@@ -1,6 +1,6 @@
 ---
 title: "März update"
-date: "2025-03-01T00:00:00Z"
+date: "2025-03-17T00:00:00Z"
 draft: false
 description: "Vorlage für Journals."
 isStarred: false
@@ -10,7 +10,7 @@ layout: "monthly_overview"
 # Monatsübersicht: März 2025 - Update
 
 Halbzeit im März. Die letzten Tage waren ziemlich anstrengend.
-Wir hatten Besuch aus dem Kindergarten, weil die Betreuung eines Kindes ausgefallen war. Dadurch wurden 
+Wir hatten Besuch aus dem Kindergarten, weil die Betreuung eines Kindes ausgefallen war. Dadurch wurden
 unsere Abläufe erheblich durcheinandergebracht.
 
 ## Aufgabenübersicht
@@ -32,15 +32,15 @@ Diese werden jedoch erst später umgesetzt, sobald die ersten Projekte online si
 
 ### Join
 
-Meine kleine Hassliebe. Auf der einen Seite ist es ein schönes kleines Projekt, 
+Meine kleine Hassliebe. Auf der einen Seite ist es ein schönes kleines Projekt,
 mit dem man zeigen kann, was man erstellen kann.
 
-Aber mir fehlt bei dem Projekt etwas der innere Antrieb, weil ich den Mehrwert des Projekts 
+Aber mir fehlt bei dem Projekt etwas der innere Antrieb, weil ich den Mehrwert des Projekts
 für mich noch nicht sehe. Deshalb fällt es mir schwer, die Motivation dafür aufzubringen.
 
 ### Jennys Farm
 
-Die 
+Die
 [Homepage](https://jennys-farm.com)
 ist online. Es folgen noch einige Updates.
 Der Blog ist ebenfalls grundsätzlich erreichbar. Jetzt muss meine Frau ihn jedoch mit Leben füllen.
