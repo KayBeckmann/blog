@@ -87,6 +87,11 @@ mit dem man zeigen kann, was man erstellen kann.
 Aber mir fehlt bei dem Projekt etwas der innere Antrieb, weil ich den Mehrwert des Projekts
 für mich noch nicht sehe. Deshalb fällt es mir schwer, die Motivation dafür aufzubringen.
 
+Ich habe mir nun von ChatGPT eine 30 Tage Challange erstellen lassen.
+Diese soll mich motivieren das Projekt umzusetzten.
+Für jeden Tag hat mir ChatGPT nun eine Aufgabe erstellt, die ich umsetzten muss, damit das Projekt
+fertig gestellt wird.
+
 ### ERP
 
 Ich habe schon lange den Wunsch ein ERP zu erstellen.
