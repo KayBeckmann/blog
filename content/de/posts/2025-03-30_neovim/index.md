@@ -127,3 +127,9 @@ Optional kannst du mit `cron`, `rsync` oder Cloud-Lösungen eine zusätzliche Ba
 Mit dieser Konfiguration hast du ein **sicheres, portables und automatisiertes Journalsystem**, das sich ideal in deinen Coding-Workflow integriert. Du arbeitest vollständig offlinefähig und kannst jederzeit mit Git deine Inhalte zurückholen, teilen oder auf mehreren Geräten nutzen.
 
 Wenn du noch Features wie `:GenerateWeek`, mobile Integration oder Obsidian-Kompatibilität willst – lass es mich wissen 😎
+
+## Kaffee
+
+Über einen  
+[Kaffee](https://www.buymeacoffee.com/snuppedelua)  
+würde ich mich auf jeden Fall freuen.
