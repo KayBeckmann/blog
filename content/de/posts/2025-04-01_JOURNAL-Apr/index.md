@@ -15,8 +15,8 @@ Angesichts der Tatsache, dass mein Wecker kurz nach 4 Uhr klingelt, ist der Tag 
 vorbei – meine Projekte und Hobbys bleiben auf der Strecke.  
 Dementsprechend hat sich an meinen Projekten aktuell nichts verändert.
 
-Über einen  
-[Kaffee](https://www.buymeacoffee.com/snuppedelua)  
+Über einen
+[Kaffee](https://www.buymeacoffee.com/snuppedelua)
 würde ich mich auf jeden Fall freuen.
 
 ## Aufgabenübersicht

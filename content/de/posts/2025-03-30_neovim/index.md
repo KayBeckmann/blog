@@ -130,6 +130,6 @@ Wenn du noch Features wie `:GenerateWeek`, mobile Integration oder Obsidian-Komp
 
 ## Kaffee
 
-Über einen  
-[Kaffee](https://www.buymeacoffee.com/snuppedelua)  
+Über einen
+[Kaffee](https://www.buymeacoffee.com/snuppedelua)
 würde ich mich auf jeden Fall freuen.
