@@ -44,3 +44,9 @@ Wie man sieht, ist trotz der Stille einiges passiert. Dennoch sind meine eigentl
 Bald steht auch wieder der Monatsbericht an – vielleicht schaffe ich bis dahin noch ein wenig Fortschritt, um dann zumindest etwas Positives berichten zu können.
 
 Bis bald!
+
+## Kaffee
+
+Über einen
+[Kaffee](https://www.buymeacoffee.com/snuppedelua)
+würde ich mich auf jeden Fall freuen.
