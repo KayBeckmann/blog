@@ -63,7 +63,13 @@ Somit konnte das Fleisch von 11 Uhr bis ca. 18:30 Uhr vor sich hin räuchern.
 Die Temperatur im Garraum schwankte zwischen 90 °C und 130 °C. Überwiegend war
 die Temperatur aber an der oberen Grenze.
 
-![kleines Video](./VID-20250525-WA0002.mp4)
+{{ $video := .Resources.GetMatch "VID-20250525-WA0002.mp4" }}
+{{ if $video }}
+<video width="100%" controls>
+<source src="{{ $video.RelPermalink }}" type="video/mp4">
+Dein Browser unterstützt das Video-Tag nicht.
+</video>
+{{ end }}
 
 Wie man im Video sieht, raucht es ordentlich.
 Das Schwarze ist die Marinade, die mit der Temperatur nicht so gut klarkam.
