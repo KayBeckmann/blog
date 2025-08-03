@@ -13,12 +13,12 @@ Diesen Monat blicke ich auf den Juli zurück, für den ich das Journal leider au
 
 ## Aufgabenübersicht
 
-| Priorität | Aufgaben                | Status  | Deadline | Verzögerungsstatus |
-| --------- | ----------------------- | ------- | -------- | ------------------ |
-| Niedrig   | [ERP](#erp)             | wartend | offen    | wartend            |
-| Niedrig   | [MyPet](#mypet)         | wartend | offen    | wartend            |
-| Niedrig   | [Tracker](#tracker)     | fertig  | beendet  | beendet            |
-| offen     | [P2P-Kredite](#kredite) | wartend | offen    | wartend            |
+| Priorität | Aufgaben                    | Status  | Deadline | Verzögerungsstatus |
+| --------- | --------------------------- | ------- | -------- | ------------------ |
+| Niedrig   | [ERP](#erp)                 | wartend | offen    | wartend            |
+| Niedrig   | [MyPet](#mypet)             | wartend | offen    | wartend            |
+| Niedrig   | [Tracker](#tracker)         | fertig  | beendet  | beendet            |
+| offen     | [P2P-Kredite](#P2P-Kredite) | wartend | offen    | wartend            |
 
 ## Statusübersicht
 
