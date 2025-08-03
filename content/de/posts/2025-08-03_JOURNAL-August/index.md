@@ -1,5 +1,5 @@
 ---
-title: "Juni"
+title: "August"
 date: "2025-08-03T00:00:00Z"
 draft: false
 description: "Vorlage für Journals."
