@@ -106,6 +106,13 @@ Diese Punkte zeigen, dass das Projekt lebendig ist und kontinuierlich weiterentw
 
 Ich hoffe, dieser Artikel gibt dir einen guten und detaillierten Überblick über dein Projekt! Du kannst ihn direkt als Basis für deine Dokumentation oder einen Blog-Beitrag verwenden. Lass es mich wissen, wenn du Anpassungen oder weitere Details wünschst!
 
+# Link zum Projekt
+
+Das Projekt ist für einen Test unter
+[projekt.beckmann-md.de](https://projekt.beckmann-md.de)
+online. Die Seite wird sind in den nächsten Tagen und Wochen
+noch etwas anpassen.
+
 # Kaffee
 
 Über einen
