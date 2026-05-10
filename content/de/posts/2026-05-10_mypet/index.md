@@ -1,69 +1,101 @@
 ---
-title: "MyPet — Von Null auf Hundert"
+title: "Viel los — MyPet, miniERP und ein wachsender Vault"
 date: "2026-05-10T00:00:00Z"
 draft: false
-description: "Wie aus einem halbfertigen Login ein vollständiges Veterinär-System mit Android-App wurde."
+description: "Drei Dinge, die sich in den letzten Wochen verändert haben: MyPet ist fertig gedacht, miniERP ist fast fertig gebaut, und Obsidian ist nicht mehr wegzudenken."
 isStarred: false
 layout: ""
 ---
 
-# MyPet — Von Null auf Hundert
+# Viel los
 
-Vor zwei Wochen habe ich hier geschrieben, dass MyPet schlummert. Dass das Grundgerüst steht, der Login funktioniert — und danach nicht viel passiert.
+Vor zwei Wochen habe ich hier geschrieben, dass MyPet schlummert, das ERP wartet, und Schweden noch ein bisschen Geduld braucht.
 
-Dann habe ich mich hingesetzt. Ernsthaft. Und die letzten Tage haben das Projekt in etwas verwandelt, das ich selbst kaum wiedererkenne.
-
----
-
-## Was jetzt steht
-
-Das Projekt ist ein Monorepo unter `/home/kay/git/mypet/`. Sechs Services laufen in Docker-Containern. Das Backend ist in Dart mit Shelf geschrieben, die Frontends in Flutter.
-
-Was früher "Login funktioniert" war, ist jetzt das:
-
-- **Backend**: 38 Datenbankmigrationen, API-Version 0.3.0. Von Benutzerverwaltung über Tierprofile bis hin zu Laborbefunden, Körpertemperatur-Tracking und wiederkehrenden Terminen — das Datenmodell ist gewachsen, ohne auseinanderzufallen.
-- **web_owner**: Das Frontend für Tierbesitzer. Globale Suche, ein Gesundheits-Score (0–100) pro Tier, Impfstatus-Ampel im Dashboard, Fütterungs-Streaks, Quick-Actions für den schnellen Alltag. Und Skeleton-Loading-Widgets, weil eine Anwendung, die sich träge anfühlt, sich falsch anfühlt — egal wie gut das Datenmodell ist.
-- **web_vet**: Das Frontend für Tierärzte. Zwölf Tabs pro Patient, darunter ein Labor-Tab, Diagnosen-Chips, Druck von Impfzertifikaten und Dossiers. Patientenzuweisung, Wiederholungstermine, Medikamenten-Duplikat-Warnung.
-- **web_provider**: Tages-Agenda, Filterchips nach Tierart, Leistungen duplizieren statt neu anlegen.
-- **web_admin**: Wachstumsdiagramme, CSV-Export, erweiterte Benutzeransicht.
-
-Und dann ist da noch die Android-App.
+Dann habe ich mich hingesetzt. Ernsthaft. Und die letzten Tage haben gleich drei Dinge auf einmal verändert.
 
 ---
 
-## Die Android-App
+## MyPet — Von Null auf Hundert
 
-Das war das Ziel, das ich eigentlich erst viel später erwartet hatte.
+Das Projekt ist ein Monorepo unter `~/git/mypet/`. Sechs Services laufen in Docker-Containern. Das Backend ist in Dart mit Shelf geschrieben, die Frontends in Flutter.
 
-Sechs Tabs per Bottom-Navigation: Übersicht, Meine Tiere, Medikamente, Erinnerungen, Termine, Profil. Jeder Tab mit eigenem Provider, eigenem State, eigener Logik.
+Was früher "Login funktioniert, danach hört es auf" war, ist jetzt das:
 
-Was mich dabei am meisten beschäftigt hat, war der **PetDetailScreen** — sieben Tabs pro Tier. Impfungen, Medikamente, Akte, Allergien, Laborbefunde, Gewicht, Notizen. Mit einer `SliverAppBar`, die beim Scrollen zusammenklappt, und einem `LinearProgressIndicator`, der den Gesundheits-Score visualisiert.
+- **Backend**: 38 Datenbankmigrationen, API-Version 0.3.0. Tierprofile, Laborbefunde, Körpertemperatur-Tracking, wiederkehrende Termine — das Datenmodell ist gewachsen, ohne auseinanderzufallen.
+- **web_owner**: Globale Suche, ein Gesundheits-Score (0–100) pro Tier, Impfstatus-Ampel im Dashboard, Fütterungs-Streaks, Quick-Actions. Und Skeleton-Loading-Widgets, weil eine App, die sich träge anfühlt, sich falsch anfühlt — egal wie gut das Datenmodell dahinter ist.
+- **web_vet**: Zwölf Tabs pro Patient, darunter ein Labor-Tab, Diagnosen-Chips, Druck von Impfzertifikaten und Dossiers. Patientenzuweisung, Wiederholungstermine, Medikamenten-Duplikat-Warnung.
+- **web_provider** und **web_admin**: Tages-Agenda, Filterchips, CSV-Export, Wachstumsdiagramme.
 
-Das **Gewichts-Tracking** hat einen eigenen Custom-Painter bekommen — eine kleine Sparkline-Kurve direkt in der App, ohne externe Bibliothek. Das war ein Nachmittag, der sich gelohnt hat.
+Und dann ist da noch die **Android-App**.
 
-Und dann: Medikamente schnell als "gegeben" markieren, direkt aus der Medikamentenliste heraus, ohne drei Klicks Umweg. Kleine Dinge, aber genau das, was aus einer App etwas Benutzbares macht.
+Sechs Tabs per Bottom-Navigation: Übersicht, Meine Tiere, Medikamente, Erinnerungen, Termine, Profil. Jeder Tab mit eigenem Provider, eigenem State, eigener Logik. Der `PetDetailScreen` allein hat sieben Tabs — Impfungen, Medikamente, Akte, Allergien, Laborbefunde, Gewicht, Notizen.
 
----
+Das Gewichts-Tracking hat einen eigenen Custom-Painter bekommen — eine kleine Sparkline-Kurve direkt in der App, ohne externe Bibliothek. Das war ein Nachmittag, der sich gelohnt hat.
 
-## Was das alles bedeutet
-
-Ich habe das Projekt eine Weile vor mir hergeschoben. Zu wenig Zeit, zu viele offene Fragen, zu groß für ein schnelles Nebenbei.
-
-Die letzten Tage haben gezeigt: Wenn man anfängt, fließt es. Nicht immer schnell, nicht immer elegant — aber es fließt. Jede Migration, jede neue Route im Backend, jeder neue Screen in der App baut auf dem auf, was vorher da war.
-
-Das Monorepo-Konzept zahlt sich aus. Gemeinsame Typen zwischen Frontend und Backend, konsistente Datenstrukturen, keine doppelte Logik. Das war am Anfang mehr Aufwand — jetzt ist es der Grund, warum ich schnell vorankomme.
+Phase 100 ist abgeschlossen. Das Monorepo-Konzept zahlt sich aus: gemeinsame Typen zwischen Frontend und Backend, konsistente Datenstrukturen, keine doppelte Logik.
 
 ---
 
-## Was als Nächstes kommt
+## miniERP — Ein ERP, das echte Arbeit abbildet
 
-Phase 100 ist abgeschlossen. Die Roadmap geht weiter.
+Das ist das Projekt, das ich selbst nicht kommen gesehen habe.
 
-Was als nächstes kommt, werde ich in den nächsten Wochen zeigen. Aber kurz gesagt: Die App soll sich nicht mehr nur nach einem Datenblatt anfühlen, sondern nach einem Werkzeug, das man gerne benutzt.
+Die Idee: Ein kleines ERP für ein Einzelunternehmen mit zwei Sparten — Bauunternehmen und Hufbearbeitung. Angebote, Aufträge, Rechnungen, Stundenerfassung, Lieferantenrechnungen, Steuerberater-Export. Nicht mehr, nicht weniger.
 
-Das ist eine andere Art von Arbeit. Keine neue Funktion, kein neuer Endpoint — sondern: Was fühlt sich falsch an? Was ist einen Tick zu langsam, einen Tick zu laut, einen Tick zu unübersichtlich?
+**Stack**: FastAPI + SQLAlchemy + Alembic im Backend, Vue 3 + Vuetify 3 im Frontend, PostgreSQL als Datenbank. PDF-Erzeugung über **Gotenberg** — das Backend rendert Jinja-Templates zu HTML, Gotenberg liefert saubers PDF/A zurück. Für Dokumentenverwaltung hängt **Paperless-ngx** dran, für KI-Unterstützung **Ollama** lokal.
 
-Das ist die Arbeit, die am Ende den Unterschied macht.
+Was mich dabei am meisten beschäftigt hat, war der Grundsatz: **Freitext vor Stammdaten**. In der Praxis gibt es bei einem Bauunternehmen selten identische Positionen. Wer Mitarbeiter zwingt, erst einen Stammartikel anzulegen, bevor sie ein Angebot schreiben können, baut Reibung ein — keine Software. Also: freie Eingabe als Standard, Stammdaten wachsen organisch nach, wenn sich etwas wirklich wiederholt.
+
+Die Phasen liefen in rasantem Tempo durch:
+
+- **Phase 0–1**: Gerüst, Docker, JWT-Login, Stammdaten (Kunden, Lieferanten)
+- **Phase 2**: Angebote mit Positionseditor, PDF-Vorschau, Angebotsgruppen, Status-Workflow
+- **Phase 3**: Aufträge, Auftragsbestätigungen, Stundenerfassung mit Wochenansicht
+- **Phase 4**: Ausgangsrechnungen — Teil-, Abschlags-, Schlussrechnungen, Gutschriften, E-Rechnung (XRechnung / ZUGFeRD)
+- **Phase 5**: Lieferantenrechnungen — Upload, OCR via Paperless, Strukturierung per Ollama
+- **Phase 6**: Auswertungen, EÜR-Vorschau, Steuerberater-Export als ZIP-Bundle
+- **Phase 7**: KI-Komfort — Stichworte werden zu ausformulierten Positionen, Freitext wird in Einzelpositionen aufgeteilt
+- **Phase 8**: Härtung — GoBD-konforme Hashkette, append-only Audit-Log
+
+Heute kam noch dazu: n8n ist raus. Was vorher über n8n-Workflows lief, macht jetzt ein einziges Shell-Script direkt als Paperless-Webhook. Einfacher, robuster, keine extra Moving Parts. Und das Profil-Menü ist fertig — Passwort ändern, Abmelden, alles da.
+
+Was noch fehlt: Mandantendaten vollständig aus `.env` lesen statt hardcodiert, E-Mail-Versand, HBCI-Bankabgleich. Aber das Kern-System läuft.
+
+---
+
+## Obsidian — Der Vault wächst
+
+Im April-Post hatte ich das Notizbuch erwähnt — Ideen zu Papier bringen, Strukturen skizzieren, offline denken.
+
+Inzwischen ist daraus etwas geworden, das ich selbst nicht mehr missen will: ein Obsidian-Vault unter `~/git/obsidian_vault/`, der per Git synchronisiert wird — auch auf dem Android-Handy via Termux.
+
+Der Vault hat eine klare Struktur:
+
+```
+00_Inbox      → alles Neue landet erst hier
+10_Projects   → aktive Projekte (MyPet, miniERP, Motivhaus, …)
+20_Infrastructure → Server, Docker, Konfigurationen
+30_Freelance  → Kundenprojekte
+40_Family     → Haushalt, Planung
+50_Personal   → Persönliches
+60_Learning   → Lernmaterialien
+90_Daily      → Tagesnotizen
+99_Claude_Skills → Skills für Claude Code
+```
+
+Was mich daran besonders freut: Claude Code schreibt inzwischen aktiv in den Vault. Es gibt ein sogenanntes **Vault-Capture-Setup** — eine Kombination aus einem globalen `CLAUDE.md`, einem Skill und einem Slash-Command. Wenn Claude und ich zusammen etwas herausfinden, das es wert ist, festgehalten zu werden, landet es strukturiert im Vault. Nicht jeder Zwischenschritt, sondern das, was wirklich zählt: nicht-offensichtliche Lösungen, Architekturentscheidungen, Erkenntnisse, die man sonst neu erarbeiten müsste.
+
+Das klingt nach Details. Aber es verändert, wie ich mit dem Werkzeug arbeite. Wissen verschwindet nicht mehr im Chatverlauf.
+
+---
+
+# Schlussgedanke
+
+Manchmal läuft alles gleichzeitig. Das ist selten bequem, aber meistens fruchtbar.
+
+MyPet hat einen Stand, auf dem man aufbauen kann. miniERP hat Phasen, die ich selbst nicht für realistisch gehalten hätte. Und Obsidian ist vom gelegentlichen Notizbuch zum echten Arbeitswerkzeug geworden.
+
+Das Haus steht übrigens noch. Schweden wartet noch. Aber der Norden wird schon WLAN haben.
 
 ---
 
