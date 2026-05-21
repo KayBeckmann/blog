@@ -20,15 +20,15 @@ Als erstes werde ich die verwendeten Programme kurz vorstellen und dann meine je
 
 Verwendet werden die Programme Hugo, Git und Docker. Zur Syncronisation zwischen den einzelnen Systemen benutze ich Github als Plattform. Ich hatte auch mal eine eigene Gitlab-Instanz laufen, diese ist aber nicht mehr aktiv. Eventuell kommt das zu einem späteren Zeitpunkt noch mal.
 
-### Hugo (ChatGPT erklärung)
+### Hugo
 
 Hugo ist ein statischer Website-Generator, der es mir erlaubt, die Inhalte dieses Blogs einfach zu verwalten. Er ist in Go geschrieben und performant. Ich habe mich für Hugo entschieden, weil er schnell, einfach zu benutzen und erweiterbar ist.
 
-### git (ChatGPT erklärung)
+### git
 
 Git ist ein Versionskontrollsystem, das mir erlaubt, die Änderungen an den Inhalten dieses Blogs zu verfolgen. Ich kann Änderungen speichern, zurücksetzen und mit anderen Entwicklern zusammenarbeiten.
 
-### docker (ChatGPT erklärung)
+### docker
 
 Docker ist ein Containerisierungstool, das es mir erlaubt, Programme in isolierten Umgebungen auszuführen. Ich benutze Docker, um Hugo und andere benötigte Programme auszuführen. Das hat den Vorteil, dass die Installation auf allen Systemen identisch ist und ich somit einfach zwischen verschiedenen Computern wechseln kann.
 
@@ -111,7 +111,7 @@ Mein Update-Script:
 ````bash
 #!/bin/bash
 
-cd /home/kay/blog/blog
+cd /pfad/zum/blog
 git pull
 cd ..
 docker-compose pull

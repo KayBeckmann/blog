@@ -17,7 +17,7 @@ Dann habe ich mich hingesetzt. Ernsthaft. Und die letzten Tage haben gleich drei
 
 ## MyPet — Von Null auf Hundert
 
-Das Projekt ist ein Monorepo unter `~/git/mypet/`. Sechs Services laufen in Docker-Containern. Das Backend ist in Dart mit Shelf geschrieben, die Frontends in Flutter.
+Das Projekt ist ein Monorepo mit sechs Services in Docker-Containern. Das Backend ist in Dart mit Shelf geschrieben, die Frontends in Flutter.
 
 Was früher "Login funktioniert, danach hört es auf" war, ist jetzt das:
 
@@ -67,7 +67,7 @@ Was noch fehlt: Mandantendaten vollständig aus `.env` lesen statt hardcodiert, 
 
 Im April-Post hatte ich das Notizbuch erwähnt — Ideen zu Papier bringen, Strukturen skizzieren, offline denken.
 
-Inzwischen ist daraus etwas geworden, das ich selbst nicht mehr missen will: ein Obsidian-Vault unter `~/git/obsidian_vault/`, der per Git synchronisiert wird — auch auf dem Android-Handy via Termux.
+Inzwischen ist daraus etwas geworden, das ich selbst nicht mehr missen will: ein Obsidian-Vault, der per Git synchronisiert wird — auch auf dem Android-Handy via Termux.
 
 Der Vault hat eine klare Struktur:
 

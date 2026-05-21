@@ -8,7 +8,7 @@ isStarred: false
 
 # Trader AI: Ein technischer Einblick in ein KI-gestütztes Handelssystem
 
-In diesem Artikel werfen wir einen detaillierten Blick auf das "Trader AI"-Projekt. Es handelt sich um eine Anwendung, die maschinelles Lernen, genauer gesagt einen K-Nächste-Nachbarn-Algorithmus (KNN), verwendet, um auf Basis historischer Kursdaten Kauf- und Verkaufsentscheidungen für Aktien zu simulieren. Wir beleuchten die Systemarchitektur, die asynchrone Kommunikation im Backend, den Aufbau und das Training des KI-Modells sowie die Funktionsweise des Frontends.
+In diesem Artikel werfe ich einen detaillierten Blick auf das "Trader AI"-Projekt. Es handelt sich um eine Anwendung, die maschinelles Lernen, genauer gesagt einen K-Nächste-Nachbarn-Algorithmus (KNN), verwendet, um auf Basis historischer Kursdaten Kauf- und Verkaufsentscheidungen für Aktien zu simulieren. Ich beleuchte die Systemarchitektur, die asynchrone Kommunikation im Backend, den Aufbau und das Training des KI-Modells sowie die Funktionsweise des Frontends.
 
 ## 1. Systemarchitektur: Ein Überblick
 

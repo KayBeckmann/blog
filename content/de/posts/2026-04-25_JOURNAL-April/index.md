@@ -65,7 +65,7 @@ Im April habe ich die Dokumentation im Vault neu aufgestellt. Das fühlt sich na
 
 ## Notizen
 
-Eine plattformübergreifende Notiz-App — Flutter, Material Design 3, Markdown-Support, Sprachnotizen, Zeichnungen. Das Projekt lebt in `~/git/Notizen/`. Es ist eines dieser Projekte, die ich immer wieder in die Hand nehme, ein bisschen weiterbringe, und dann wieder warte, bis die Ideen ausgereift sind.
+Eine plattformübergreifende Notiz-App — Flutter, Material Design 3, Markdown-Support, Sprachnotizen, Zeichnungen. Es ist eines dieser Projekte, die ich immer wieder in die Hand nehme, ein bisschen weiterbringe, und dann wieder warte, bis die Ideen ausgereift sind.
 
 Was mich daran fasziniert: Notizen sind das älteste Interface der Welt. Und trotzdem ist es schwer, eine App zu bauen, die sich *richtig* anfühlt. Nicht überladen, nicht zu simpel. Irgendwo dazwischen.
 

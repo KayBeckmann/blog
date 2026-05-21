@@ -7,10 +7,9 @@ isStarred: false
 ---
 
 # Entwicklung eines Task-Management-Backends mit ExpressJS
-Dieser Beitrag wurde von ChatGPT erstellt.
 
 ## Einleitung
-In diesem Beitrag erläutern wir die Entwicklung eines Task-Management-Backends mit ExpressJS und einer SQL-Datenbank. Während der Entwicklung nutzen wir SQLite, später wird die Umstellung auf MySQL erfolgen. Das Backend stellt eine Registrierungs- und Login-API bereit, verwendet JWT zur Authentifizierung und bietet die Möglichkeit zur Verwaltung von Tasks und Kontakten.
+In diesem Beitrag erläutere ich die Entwicklung eines Task-Management-Backends mit ExpressJS und einer SQL-Datenbank. Während der Entwicklung nutze ich SQLite, später wird die Umstellung auf MySQL erfolgen. Das Backend stellt eine Registrierungs- und Login-API bereit, verwendet JWT zur Authentifizierung und bietet die Möglichkeit zur Verwaltung von Tasks und Kontakten.
 
 ## Projektstruktur
 Die Projektstruktur ist wie folgt organisiert:
