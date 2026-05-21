@@ -85,15 +85,21 @@ Zwischen allem hat sich etwas anderes herauskristallisiert — nicht ein Projekt
 
 ElektraLog braucht Kunden. Motivhaus braucht ein Publikum. Freelance-Automatisierung funktioniert nur, wenn jemand weiß, dass ich das anbiete.
 
-Das ist keine neue Frage. Aber sie wird konkreter, je weiter die Projekte reifen. Was ich gerade herausarbeite: Thema, Zielgruppe, Angebot. Und einen Kanal — wahrscheinlich YouTube, wahrscheinlich Screencasts, wahrscheinlich auf Deutsch. Nicht weil YouTube die einzige Antwort ist, sondern weil Konstanz mehr zählt als Plattform — und das ist das Format, das ich mir vorstellen kann durchzuhalten.
+Das ist keine neue Frage. Aber sie wird konkreter, je weiter die Projekte reifen. Was ich jetzt konkret angehe:
 
-Noch kein Video. Noch kein Kanal. Aber die Struktur ist da. Und manchmal ist das der entscheidende Schritt.
+**Plattformen.** Nicht nur YouTube. LinkedIn und Xing für die B2B-Seite — Selbstständige und KMU, die automatisieren wollen. Instagram für den visuellen Teil: App-Screenshots, Fortschrittsmomente, "das ist gerade live gegangen". Und dieser Blog als Heimatbasis — der einzige Ort, wo Inhalte wirklich permanent sind und gefunden werden können.
+
+**Prinzip.** Einmal erstellen, mehrfach verwerten. Ein Blog-Post wie dieser ist der Ausgangspunkt. Daraus entsteht ein LinkedIn-Post, ein Instagram-Bild, vielleicht später ein Video. Das Zeitbudget ist knapp — also muss der Prozess schlank sein, nicht die Qualität.
+
+**Das Werkzeug hinter dem Werkzeug.** Was mich dabei besonders beschäftigt: Ich dokumentiere die Arbeit ohnehin — im Vault, in Git-Commits, in Notizen. Der Schritt von "dokumentiert für mich" zu "aufbereitet für andere" ist kleiner als gedacht. Was dafür fehlt, ist nicht Stoff. Es ist Routine.
+
+Die ist jetzt im Aufbau. Noch kein Video. Noch kein viraler Post. Aber der Prozess ist beschrieben, die Plattformen sind klar, und der erste Schritt ist immer der gleiche: einfach anfangen.
 
 ---
 
 # Schlussgedanke
 
-Elf Tage. Ein Logo, ein abgeschlossenes Spiel, ein neues Projekt in der Schublade, und ein bisschen mehr Klarheit darüber, wohin das alles führen soll.
+Elf Tage. Ein Logo, ein abgeschlossenes Spiel, ein neues Projekt in der Schublade, ein Sichtbarkeitsplan auf Papier — und ein bisschen mehr Klarheit darüber, wohin das alles führen soll.
 
 Das Haus steht noch. Schweden wartet noch. Aber der Norden wird schon WLAN haben.
 
