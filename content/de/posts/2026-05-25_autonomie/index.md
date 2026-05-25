@@ -1,17 +1,37 @@
 ---
-title: "Makler, Terminals und autonome Agenturen"
+title: "SilverBullet, Makler, Terminals und autonome Agenturen"
 date: "2026-05-25T00:00:00Z"
 draft: false
-description: "Ein Makler-Portal bekommt 14 Features in einer Session. Zwei Lernnotizen entstehen. Und aus einer Idee wird das Konzept einer Softwareagentur, die sich selbst betreibt."
+description: "SilverBullet läuft im Docker-Container. Ein Makler-Portal bekommt 14 Features. Zwei Lernnotizen entstehen. Und aus einer Idee wird das Konzept einer Softwareagentur, die sich selbst betreibt."
 isStarred: false
 layout: ""
 ---
 
-# Makler, Terminals und autonome Agenturen
+# SilverBullet, Makler, Terminals und autonome Agenturen
 
-Manchmal sind Tage einfach voll. Heute war so ein Tag.
+Manchmal sind Tage einfach voll. Die letzten Tage waren so.
 
-Drei Blöcke, sehr unterschiedliche Themen — und trotzdem hängt irgendwie alles zusammen. Los.
+Fünf Sessions, fünf Themenblöcke — und trotzdem hängt irgendwie alles zusammen. Los.
+
+---
+
+## SilverBullet — Selbst gehostete Notizen im Browser
+
+Das Konzept: ein Obsidian-ähnlicher Markdown-Editor, der im Browser läuft und auf dem eigenen Server liegt. Kein Cloud-Abo, keine fremde Infrastruktur, volle Kontrolle über die Daten. Das Projekt heißt **SilverBullet** — und es ist jetzt produktionsreif aufgesetzt.
+
+Der Stack besteht aus zwei Docker-Containern. Der erste ist SilverBullet selbst, der ein lokales Verzeichnis als Markdown-Space einliest. Der zweite ist ein schlanker Alpine-Container mit Git, der in einer Endlosschleife alle 15 Minuten Änderungen nach GitHub pusht. Kein Cron-Daemon, keine Abhängigkeit — nur eine Shell-Schleife mit `sleep`. Das ist simpler, neustartsicher und macht dasselbe.
+
+Für den Sync braucht der Container einen SSH-Key. Der wird einmalig lokal generiert und landet als Bind Mount im Container — nicht im Repository. Alle Daten (Space, Key, Konfiguration) liegen als Bind Mounts im Projektordner, keine Docker Volumes. Wer wissen will, wo seine Daten sind, muss nicht nachschauen: sie liegen genau da, wo man hinzeigt.
+
+Zwei Compose-Dateien. `docker-compose.yml` ist die Produktionsversion — kein Port nach außen, Reverse Proxy übernimmt. `docker-compose.override.yml` öffnet Port 3000 für den lokalen Test und wird von Docker Compose automatisch eingelesen, wenn sie vorhanden ist. Für den Produktivbetrieb wird sie einfach umbenannt.
+
+**Beim ersten echten Start dann zwei Bugs** — die lehrreichen.
+
+*Bug 1:* Die Produktionskonfiguration referenziert ein externes `proxy`-Netzwerk für Traefik. Lokal existiert dieses Netzwerk nicht. Fehler beim `docker compose up`, sofort sichtbar. Gelöst durch einen Override-Eintrag, der das Netzwerk für den lokalen Test als intern deklariert. Kein `docker network create` von Hand nötig.
+
+*Bug 2:* SilverBullet 2.8.x hat ein Interface geändert. Früher gab es `SB_USER` und `SB_PASS` als separate Variablen. Jetzt erwartet `SB_USER` beides in einem: `user:passwort`. Der Fehler im Log war eindeutig — `SB_USER must be in the format user:pass` — aber in der Dokumentation stand das nicht prominent. Alle betroffenen Stellen angepasst: Compose-Datei, `.env.example`, Override und Anleitung.
+
+Das ist die Stelle, wo Planung auf Realität trifft. Zwei Bugs, beide innerhalb von zwanzig Minuten verstanden und behoben. Danach läuft es.
 
 ---
 
@@ -32,6 +52,18 @@ Das Inserate-Grid auf der Startseite hat Filter bekommen (Typ, Preis, Zimmeranza
 **Infrastruktur:** Klartext-Credentials aus `docker-compose.yml` raus, alles in `.env` via `env_file`. Eine `.env.example` liegt im Repo, die echte `.env` bleibt in `.gitignore`.
 
 Eine interessante Kleinigkeit am Rande: In Express muss die Route `/admin` vor `/:slug` stehen, sonst matcht der Slug-Parameter den String "admin". In diesem Fall kein Bug — aber ein stilles Fehlverhalten wäre möglich gewesen. Reihenfolge zählt.
+
+---
+
+## Tamagotchi — Divergierende Branches zusammengeführt
+
+Zwischendurch noch ein Git-Klassiker.
+
+Das Tamagotchi-Repo hatte zwei Branches, die von demselben Commit aus unabhängig voneinander die gleichen Features implementiert hatten. Einmal lokal auf Englisch, einmal remote mit deutschem Phase-Schema. Resultat: 11 Merge-Konflikte in Arena, Tournament, Profile und Home Screen.
+
+Passiert, wenn man zwischen Geräten wechselt ohne vorher zu pushen. Man fängt an, merkt nicht, dass remote schon jemand — man selbst — weitergearbeitet hat, und arbeitet parallel. Irgendwann laufen beide Branches auseinander und man steht vor einem Diff, den man selbst verursacht hat.
+
+`git log --graph --all` macht in solchen Momenten sofort sichtbar, wie weit die Branches auseinander liegen und ob Rebase oder Merge die bessere Wahl ist. Hier war es Merge: Remote als Basis, einzigartiger Code aus dem lokalen Branch — unter anderem `creature_sprite.dart` (Animations-Widget) und die Social-Modul-Dateien — manuell übernommen.
 
 ---
 
@@ -108,9 +140,9 @@ Was mich an dem Konzept reizt: Hermes und Paperclip sind Geschwisterprojekte, ab
 
 ## Warum das alles zusammenhängt
 
-Makler-Portal, TMUX, NeoVim, Paperclip, Hermes — das klingt wie ein Sammelsurium.
+SilverBullet, Tamagotchi, Makler-Portal, TMUX, NeoVim, Paperclip, Hermes — das klingt wie ein Sammelsurium.
 
-Aber es ist dasselbe Thema aus verschiedenen Winkeln: **Werkzeuge, die Arbeit abnehmen.** TMUX und NeoVim nehmen mir Bewegungen ab — weniger Maus, weniger Kontextwechsel. Das Makler-Portal nimmt dem Kunden manuelle Arbeit ab. Paperclip nimmt mir Routineaufgaben ab. Hermes nimmt mir Koordinationsarbeit ab.
+Aber es ist dasselbe Thema aus verschiedenen Winkeln: **Werkzeuge, die Arbeit abnehmen.** SilverBullet nimmt mir die Abhängigkeit von Cloud-Diensten ab. TMUX und NeoVim nehmen mir Bewegungen ab — weniger Maus, weniger Kontextwechsel. Das Makler-Portal nimmt dem Kunden manuelle Arbeit ab. Paperclip nimmt mir Routineaufgaben ab. Hermes nimmt mir Koordinationsarbeit ab.
 
 Das ist kein philosophischer Anspruch. Es ist pragmatisch: Wer Zeit hat, denkt. Wer keine Zeit hat, reagiert. Die Frage ist immer — was kann das System übernehmen, damit ich denken kann?
 
@@ -118,7 +150,7 @@ Das ist kein philosophischer Anspruch. Es ist pragmatisch: Wer Zeit hat, denkt. 
 
 # Schlussgedanke
 
-Heute war lang. Aber es war der gute Lang — der, bei dem man am Ende weiß, was man hat.
+Die letzten Tage waren lang. Aber es war der gute Lang — der, bei dem man am Ende weiß, was man hat.
 
 Das Haus steht noch. Schweden wartet noch. Hermes schläft noch.
 
