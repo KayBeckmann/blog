@@ -7,7 +7,7 @@ isStarred: false
 tags: ["Flutter", "Dart", "Android", "saasERP", "ElektraLog", "ERP", "SaaS", "Schreiben", "Lektorat", "Schwedisch"]
 ---
 
-# Ein ERP, ein Lektorat, eine tote Sprache und ein Android-Crash der schweigt
+# Ein ERP, ein Lektorat, eine tote Sprache und ein Android-Crash der schweigt 
 
 Manchmal läuft eine Woche einfach rund. Manchmal liefert sie so viel auf einmal, dass man am Ende kaum glaubt, dass das tatsächlich alles in zwei Wochen passiert ist.
 
