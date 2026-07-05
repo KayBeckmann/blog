@@ -195,7 +195,7 @@ Die präzise Nutzer-Beschreibung war mehr wert als jeder weitere Code-Blick an d
 
 ## Schlussgedanke
 
-Neun Meilensteine, ein abgelaufenes VPN-Zertifikat, eine neue App, drei Deployment-Bugs, ein Dorffest mit vier Mannschaften und vier Kartons Büro.
+Neun Meilensteine, ein abgelaufenes VPN-Zertifikat, eine neue App, drei Deployment-Bugs, ein Dorffest mit vier Mannschaften und vielen Kartons im Büro.
 
 Das Gemeinsame hinter allen technischen Problemen dieser Woche: Die hartnäckigsten Bugs lagen nie dort, wo man zuerst geschaut hat. Der PDF-Bug hatte drei Ebenen. Der Kamera-Bug lag an der Architektur, nicht an Kamera-Parametern. Der größte Showstopper stand in der kürzesten Datei des Projekts.
 
