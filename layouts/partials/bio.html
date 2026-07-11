@@ -1,0 +1,34 @@
+{{ $avatar_img := .Site.Params.author.avatar }}
+{{ $avatar_img_alt := .Site.Params.author.name }}
+{{ $image := resources.Get $avatar_img }}
+<div class="masthead">
+    <div class="masthead-identity">
+        {{ with $image }}
+        {{ if eq .MediaType.SubType "svg" }}
+        <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" class="masthead-avatar">
+            <image width="64" height="64" href="{{ $image.RelPermalink }}" />
+        </svg>
+        {{ else }}
+        {{ $image := $image.Fill "128x128 webp" }}
+        <img class="masthead-avatar" src="{{ $image.RelPermalink }}" alt="{{ $avatar_img_alt }}" width="64"
+            height="64" />
+        {{ end }}
+        {{ end }}
+        <div>
+            <h2 class="masthead-name">{{ .Site.Params.author.intro }}</h2>
+            <p class="masthead-bio">{{ .Site.Params.author.description }}</p>
+        </div>
+    </div>
+    <div class="masthead-pattern" aria-hidden="true">
+        <svg viewBox="0 0 200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="circuit-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M0 20h10l5 5h10M20 0v10l-5 5v10" fill="none" stroke="currentColor" stroke-width="0.5" />
+                    <circle cx="25" cy="25" r="1.5" fill="currentColor" />
+                    <circle cx="10" cy="20" r="1" fill="currentColor" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#circuit-pattern)" />
+        </svg>
+    </div>
+</div>
